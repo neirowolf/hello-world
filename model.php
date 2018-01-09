@@ -20,6 +20,7 @@ class Students extends ObjectModel
 		// Language fields
 		'name' =>
 			array('type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isGenericName', 'size' => 255)
+		)
 	);
 	
 	/******************************************
