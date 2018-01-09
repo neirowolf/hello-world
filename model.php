@@ -33,7 +33,7 @@ class Students extends ObjectModel
 		$id_lang=(int)$id_lang;
 		$db = Db::getInstance();
 		
-		$studentsList = $db->ExecuteS('SELECT t1.* FROM '._DB_PREFIX_.'students AS t1 INNER JOIN '._DB_PREFIX_.'students_lang as t2 t1.id_students=t2.id_students WHERE t2.lang_id='.$id_lang);
+		$studentsList = $db->ExecuteS('SELECT t1.*,t2.name FROM '._DB_PREFIX_.'students AS t1 INNER JOIN '._DB_PREFIX_.'students_lang as t2 t1.id_students=t2.id_students WHERE t2.lang_id='.$id_lang);
 		return ($query);
 	}
 	
