@@ -6,7 +6,6 @@ class Students extends ObjectModel
 	public $birth_date;
 	public $is_in_educate;
 	public $average_score;
-	public $average_score;
 	public $name;
 	
 	public static $definition = array(
